@@ -23,7 +23,7 @@ jobs:
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v4
       - name: Build Nuget Package
-        uses: akmkok7/Arun-RPA-UiPath-Pack@v1
+        uses: akmkok7/Arun-RPA-UiPath-Pack@v1.0.0
       - name: Upload UiPath Artifacts
         uses: actions/upload-artifact@v4
         with:
