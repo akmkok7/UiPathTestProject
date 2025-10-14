@@ -51,7 +51,7 @@ jobs:
           name: Artifacts
           path: package
       - name: Publish Nuget Package to ACC
-        uses: akmkok7/Arun-RPA-UiPath-Deploy@v1
+        uses: akmkok7/Arun-RPA-UiPath-Deploy@v1.0.0
         with:
           packagesPath: ${{ github.workspace }}\package
           orchestratorTenant: DefaultTenant
