@@ -38,7 +38,8 @@ jobs:
     env:
       # Replace with your Orchestrator Values 
       ORCH_URL: https://cloud.uipath.com/
-      ORCH_TENANT: DefaultTenant
+      #ORCH_TENANT: DefaultTenant
+      ORCH_TENANT: Development
       ORCH_AppAccount: arunkmk
       ORCH_AppID: ${{ secrets.APPID }}
       ORCH_AppSecret: ${{ secrets.APPSECRET }}
@@ -54,7 +55,7 @@ jobs:
         uses: akmkok7/Arun-RPA-UiPath-Deploy@v1.0.0
         with:
           packagesPath: ${{ github.workspace }}\package
-          orchestratorTenant: DefaultTenant
+          orchestratorTenant: Development
           orchestratorAppAccount: arunkmk
           orchestratorApplicationId: ${{ env.ORCH_AppID }}
           orchestratorApplicationSecret: ${{ env.ORCH_AppSecret }}
