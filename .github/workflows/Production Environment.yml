@@ -1,4 +1,4 @@
-name: Acceptance Environment
+name: Production Environment
 on:
   workflow_dispatch:
  # push:
@@ -44,8 +44,8 @@ jobs:
       ORCH_AppAccount: BitsDesignProject
       ORCH_AppID: ${{ secrets.APPID }}
       ORCH_AppSecret: ${{ secrets.APPSECRET }}
-      ORCH_FolderName: ${{ vars.FOLDERNAME_ACC }}
-      ORCH_CreateProcess: ${{ vars.CREATEPROCESS_ACC }}
+      ORCH_FolderName: ${{ vars.FOLDERNAME_PRD }}
+      ORCH_CreateProcess: ${{ vars.CREATEPROCESS_PRD }}
     steps: 
       - name: Download UiPath Artifacts
         uses: actions/download-artifact@v4
