@@ -62,7 +62,14 @@ jobs:
           orchestratorApplicationSecret: ${{ env.ORCH_AppSecret }}
           orchestratorFolder: ${{ env.ORCH_FolderName }}
           orchestratorCreateProcess: ${{ env.ORCH_CreateProcess }}
+      - name: Checkout repository
+       uses: actions/checkout@v4
 
+      - name: Download UiPath Artifacts
+       uses: actions/download-artifact@v4
+       with:
+           name: Artifacts
+           path: package
        # REPLACE the "Read project.json" step with this:
       - name: Read project.json for notification
         id: read_project          # ← give it an id
