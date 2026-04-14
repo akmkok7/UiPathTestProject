@@ -68,7 +68,8 @@ jobs:
         id: read_project          # ← give it an id
         shell: pwsh
         run: |
-          $project = Get-Content "package\project.json" | ConvertFrom-Json
+          #$project = Get-Content "package\project.json" | ConvertFrom-Json
+          $project = Get-Content "${{ github.workspace }}\project.json" | ConvertFrom-Json
           echo "process_name=$($project.name)" >> $env:GITHUB_OUTPUT
           echo "version=$($project.projectVersion)" >> $env:GITHUB_OUTPUT
 
