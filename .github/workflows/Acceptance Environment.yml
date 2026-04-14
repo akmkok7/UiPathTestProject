@@ -38,7 +38,7 @@ jobs:
     # Here the environment variable is declared in workflow level
     env:
       # Replace with your Orchestrator Values 
-      ORCH_URL: https://cloud.uipath.com/
+      ORCH_URL: https://cloud.uipath.com/BitsDesignProject/
       #ORCH_TENANT: DefaultTenant
       ORCH_TENANT: Acceptance
       ORCH_AppAccount: BITS
@@ -56,8 +56,8 @@ jobs:
         uses: akmkok7/Arun-RPA-UiPath-Deploy@v1.0.0
         with:
           packagesPath: ${{ github.workspace }}\package
-          orchestratorTenant: DefaultTenant
-          orchestratorAppAccount: Development
+          orchestratorTenant: Acceptance
+          orchestratorAppAccount: BITS
           orchestratorApplicationId: ${{ env.ORCH_AppID }}
           orchestratorApplicationSecret: ${{ env.ORCH_AppSecret }}
           orchestratorFolder: ${{ env.ORCH_FolderName }}
