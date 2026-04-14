@@ -6,9 +6,6 @@ on:
    # paths:
     #  - 'project.json'
      # - 'Main.xaml'
-permissions: 
-content: read
-security-events: write
 
 jobs:
   cleanup:
