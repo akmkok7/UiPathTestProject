@@ -40,8 +40,8 @@ jobs:
       # Replace with your Orchestrator Values 
       ORCH_URL: https://cloud.uipath.com/
       #ORCH_TENANT: DefaultTenant
-      ORCH_TENANT: DefaultTenant
-      ORCH_AppAccount: Development
+      ORCH_TENANT: Acceptance
+      ORCH_AppAccount: BITS
       ORCH_AppID: ${{ secrets.APPID }}
       ORCH_AppSecret: ${{ secrets.APPSECRET }}
       ORCH_FolderName: ${{ vars.FOLDERNAME_ACC }}
