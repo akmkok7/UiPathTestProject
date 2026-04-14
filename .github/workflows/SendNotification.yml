@@ -1,11 +1,11 @@
 name: Acceptance Environment
 on:
-  #workflow_dispatch:
-  push:
-    branches: main
-    paths:
-      - 'project.json'
-      - 'Main.xaml'
+  workflow_dispatch:
+  #push:
+   # branches: main
+    #paths:
+     # - 'project.json'
+      #- 'Main.xaml'
 
 jobs:
   cleanup:
