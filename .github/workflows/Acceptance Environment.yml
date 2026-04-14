@@ -38,10 +38,10 @@ jobs:
     # Here the environment variable is declared in workflow level
     env:
       # Replace with your Orchestrator Values 
-      ORCH_URL: https://cloud.uipath.com/BitsDesignProject/
+      ORCH_URL: https://cloud.uipath.com/
       #ORCH_TENANT: DefaultTenant
       ORCH_TENANT: Acceptance
-      ORCH_AppAccount: BITS
+      ORCH_AppAccount: BitsDesignProject
       ORCH_AppID: ${{ secrets.APPID }}
       ORCH_AppSecret: ${{ secrets.APPSECRET }}
       ORCH_FolderName: ${{ vars.FOLDERNAME_ACC }}
@@ -57,7 +57,7 @@ jobs:
         with:
           packagesPath: ${{ github.workspace }}\package
           orchestratorTenant: Acceptance
-          orchestratorAppAccount: BITS
+          orchestratorAppAccount: BitsDesignProject
           orchestratorApplicationId: ${{ env.ORCH_AppID }}
           orchestratorApplicationSecret: ${{ env.ORCH_AppSecret }}
           orchestratorFolder: ${{ env.ORCH_FolderName }}
